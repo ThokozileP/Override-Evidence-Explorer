@@ -31,6 +31,11 @@ app.include_router(summary.router)
 app.include_router(seed.router)
 
 
+@app.get("/")
+def root():
+    return {"name": "Override Evidence Explorer API", "docs": "/docs", "health": "/healthz"}
+
+
 @app.get("/healthz")
 def health():
     return {"status": "ok"}
