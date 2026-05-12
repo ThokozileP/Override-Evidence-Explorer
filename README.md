@@ -1,4 +1,4 @@
-# Override Evidence Explorer — MVP
+# Decision Control Gap — MVP
 
 Help regulated AI / healthcare AI teams prove what happened when a human overrode an AI recommendation.
 

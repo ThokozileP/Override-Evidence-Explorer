@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Override Evidence Explorer",
+  title: "Decision Control Gap",
   description: "Regulated AI · Human override audit",
 };
 
