@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useTransition } from "react";
+import Link from "next/link";
 import type { DecisionEvent, EvidenceSummary } from "@/lib/types";
 import { getEvidenceSummary, triggerSeedData } from "@/lib/api";
 import SummaryCards from "./SummaryCards";
@@ -39,13 +40,21 @@ export default function Dashboard({ initialRows, initialSummary }: Props) {
           <h1 className="text-lg font-semibold text-gray-900">Override Evidence Explorer</h1>
           <p className="text-xs text-gray-500 mt-0.5">Regulated AI · Human override audit</p>
         </div>
-        <button
-          onClick={handleSeed}
-          disabled={seedPending}
-          className="text-xs text-gray-500 border border-gray-300 rounded px-3 py-1.5 hover:bg-gray-50 disabled:opacity-50 transition-colors"
-        >
-          {seedPending ? "Seeding…" : "Seed demo data"}
-        </button>
+        <div className="flex items-center gap-3">
+          <Link
+            href="/demo"
+            className="text-xs text-gray-600 hover:text-gray-900 transition-colors"
+          >
+            Decision Context Record Demo →
+          </Link>
+          <button
+            onClick={handleSeed}
+            disabled={seedPending}
+            className="text-xs text-gray-500 border border-gray-300 rounded px-3 py-1.5 hover:bg-gray-50 disabled:opacity-50 transition-colors"
+          >
+            {seedPending ? "Seeding…" : "Seed demo data"}
+          </button>
+        </div>
       </header>
 
       <main className="max-w-screen-xl mx-auto px-6 py-8 space-y-8">
