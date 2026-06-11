@@ -1019,6 +1019,16 @@ function Footer() {
           AI Act. The example is synthetic and does not represent a real healthcare organisation,
           clinician, patient, or clinical system.
         </p>
+        <p className="text-xs text-gray-400">
+          Full production dossiers with live execution evidence are available under NDA. Contact{" "}
+          <a
+            href="mailto:info@giggleaiinnovation.com"
+            className="underline hover:text-gray-600 transition-colors"
+          >
+            info@giggleaiinnovation.com
+          </a>{" "}
+          to begin the conversation.
+        </p>
       </div>
     </footer>
   );
