@@ -42,10 +42,10 @@ export default function Dashboard({ initialRows, initialSummary }: Props) {
         </div>
         <div className="flex items-center gap-3">
           <Link
-            href="/demo"
+            href="/"
             className="text-xs text-gray-600 hover:text-gray-900 transition-colors"
           >
-            Decision Context Record Demo →
+            ← Dossier
           </Link>
           <button
             onClick={handleSeed}
